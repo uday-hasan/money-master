@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/mobile.css">
+</head>
+
+<body>
+    <!------- Header Section Start ------->
+    <header>
+        <h1 class="heading-text">Remaining Salary And Saving Money Calculator</h1>
+    </header>
+    <!------- Header Section End ------->
+
+    <!------- Main Section Start ---  ---->
+    <main>
+
+        <!-- Image Section -->
+        <section class="image">
+            <img src="Image/photo.jpg" alt="">
+        </section>
+
+        <!-- Calculating Section -->
+        <section class="calculating-part">
+            <section>
+                <!-- Income Part -->
+                <h3 class='center'>Income</h3>
+                <div class="part">
+                    <label for="Income">Income:</label>
+                    <input placeholder='Enter your income' type="text" id="income-input">
+                </div>
+                <p id="income-error" class="error-msg">Your income never be negative or text. </p>
+                <!-- Expenses Part -->
+                <h3 class='center'>Expenses</h3>
+                <div class="food-part part">
+                    <label for="Food">Food:</label>
+                    <input placeholder='Enter your food budget' type="text" id="food-input">
+                </div>
+                <p id="food-error" class="error-msg">Food expenses never be negative or text.</p>
+                <div class="rent-part part">
+                    <label for="Rent">Rent:</label>
+                    <input placeholder='Enter your rent budget' type="text" id="rent-input">
+                </div>
+                <p id="rent-error" class="error-msg">Rent expenses never be negative or text.</p>
+                <div class="clothes-part part">
+                    <label for="Clothes">Clothes:</label>
+                    <input placeholder='Enter your clothes budget' type="text" id="clothes-input">
+                </div>
+                <p id="clothes-error" class="error-msg">Clothes expenses never be negative or text.</p>
+                <div class="part">
+                    <button id="calculate-expenses" class="btn">Calculate</button>
+                </div>
+
+                <!-- Expenses And Balance Display -->
+                <div id="display-expenses-balance">
+                    <h3 class='center'>Total Expenses : <span id="total-expenses">00</span></h3>
+                    <h3 class='center'>Balance : <span id="balance">00</span></h3>
+                </div>
+                <p id="expenses-error" class="error-msg">You don't have sufficient income.</p>
+                <p id="empty-field-error" class="error-msg">Please write all value correctly</p>
+                <!-- Saving-Bonus-Part -->
+                <section class="saving-part">
+
+                    <!-- Saving Calculation Part -->
+                    <div class="saving-calculate part">
+                        <label for="Save">Save:</label>
+                        <input placeholder='Enter your saving per...' type="text" id="save"
+                            title="Enter your saving percentage">
+                        <p>%</p>
+                        <button class="btn" id="calculate-save">Save</button>
+                    </div>
+
+                    <!-- Saving Display Part -->
+                    <div id="saving-display">
+                        <h3 class='center'>Saving Amount : <span id="save-amount">00</span></h3>
+                        <h3 class='center'>Remaining Balance : <span id="remaining-amount">00</span></h3>
+                    </div>
+                    <p id="save-error" class="error-msg">You don't have sufficient balance to save</p>
+                    <p id="save-value-error" class="error-msg">Saving percentige can't be negative</p>
+
+                </section>
+            </section>
+        </section>
+
+    </main>
+    <!------- Main Section End ------->
+    <!-- Script File -->
+    <script src=" JS/script.js"></script>
+</body>
+
+</html>

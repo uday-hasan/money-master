@@ -1,0 +1,93 @@
+/* Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Lato:wght@300;700&family=Lora&family=Luxurious+Roman&family=Poppins:ital,wght@0,100;0,500;1,100&display=swap');
+
+/* Common Style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E5E5E5;
+    font-family: 'Lora', serif;
+}
+.part{
+    margin: 0.5rem 0;
+    display: flex;
+}
+label{
+    width: 30%;
+    padding: .3rem;
+}
+input{
+    padding: .3rem;
+    background-color: #DCDCDC;
+    border: 1px solid blue;
+}
+input:focus{
+    box-shadow: 1px 1px darkblue;
+    outline: none;
+}
+.error-msg{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+.error-msg button{
+    border: none;
+    color: red;
+    background-color: #ffffff;
+}
+.btn{
+    border: none;
+    padding: .5rem;
+    font-weight: 700;
+    background-color: #59A5FF;
+    color: #ffffff;
+}
+.center{
+    text-align: center;
+}
+
+/******    Header Part    ******/
+.heading-text{
+    text-align: center;
+    margin: 1rem 0;
+    color: #b74b23;
+}
+
+/******    Main Part    ******/
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    width: 80%;
+    margin:auto;
+    padding: 1rem;
+background-color: #F8F8F8
+}
+
+/* Image Part */
+.image{
+    width: 45%;
+    display: flex;
+}
+.image img{
+    width: 100%;
+}
+
+/* Calculating Part */
+.calculating-part{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+#calculate-expenses{
+    margin: auto;
+}
+
+/* Saving Part */
+.saving-calculate p{
+    padding: .3rem;
+    margin: 0 .2rem;
+}

@@ -1,0 +1,25 @@
+@media screen and (max-width: 730px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .part{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+        display: flex;
+    }
+    .image img{
+        width: 100%;
+    }
+    
+    /* Calculating Part */
+    .calculating-part{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
